@@ -1,15 +1,25 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1280" height="340" viewBox="0 0 1280 340" role="img" aria-labelledby="title desc">
   <title id="title">BOMBASTIC — Sky Riot</title>
-  <desc id="desc">A restrained navy banner with pink typography and three geometric arena terraces.</desc>
+  <desc id="desc">A midnight banner with bold pink typography and floating terraces with orbiting sparks.</desc>
+  <style>
+    .arena { animation:float 5s ease-in-out infinite; }
+    .orbit { transform-origin:1030px 160px; animation:orbit 24s linear infinite; }
+    @keyframes float { 0%,100% { transform:translateY(0) } 50% { transform:translateY(-12px) } }
+    @keyframes orbit { to { transform:rotate(360deg) } }
+    @media (prefers-reduced-motion:reduce) { .arena,.orbit { animation:none } }
+  </style>
   <rect width="1280" height="340" rx="20" fill="#111a32"/>
   <path d="M44 42H1236M44 298H1236" stroke="#29344d"/>
   <path d="M44 42H148" stroke="#5ae0ce" stroke-width="3"/>
   <g font-family="Arial, Helvetica, sans-serif">
-    <text x="56" y="87" font-size="13" letter-spacing="4" fill="#5ae0ce">BROWSER ARENA / SKY RIOT</text>
+    <text x="56" y="87" font-size="13" letter-spacing="4" fill="#5ae0ce">SKY RIOT / A BROWSER ARENA GAME</text>
     <text x="52" y="173" font-size="76" font-weight="800" letter-spacing="-3" fill="#f4f5fa">BOMB<tspan fill="#ff4979">ASTIC</tspan></text>
-    <text x="56" y="222" font-size="22" fill="#aab6ce">Take the stairs. Keep an exit. Make a blast.</text>
-    <text x="56" y="276" font-size="12" letter-spacing="2" fill="#7d8da8">THREE FLOORS   ·   TWELVE BOMB BEHAVIORS   ·   VERIFIED RANKINGS</text>
+    <text x="56" y="222" font-size="25" fill="#aab6ce">Big bombs. Bigger chaos.</text>
+    <text x="56" y="276" font-size="12" letter-spacing="3" fill="#7d8da8">CLIMB. CARRY. THROW. REPEAT.</text>
   </g>
+  <circle cx="1030" cy="160" r="130" fill="none" stroke="#34415f" stroke-dasharray="3 12"/>
+  <g class="orbit"><circle cx="900" cy="160" r="5" fill="#5ae0ce"/><path d="M1150 146V162M1142 154H1158" stroke="#eec96d" stroke-width="3"/></g>
+  <g class="arena">
   <g stroke-linejoin="round" stroke-width="2">
     <path d="M863 180L1030 95L1194 180L1030 265Z" fill="#203b49" stroke="#43636d"/>
     <path d="M883 145L1030 70L1175 145L1030 220Z" fill="#2d5d61" stroke="#5ae0ce"/>
@@ -19,4 +29,5 @@
   <circle cx="1030" cy="96" r="29" fill="#ff4979"/>
   <path d="M1040 70L1047 56L1060 56M1061 49V63M1054 56H1068" fill="none" stroke="#f4f5fa" stroke-width="3" stroke-linecap="round"/>
   <path d="M1013 85Q1010 93 1011 98" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+  </g>
 </svg>

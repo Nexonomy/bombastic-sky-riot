@@ -12,25 +12,6 @@ A 3D browser arena game with connected terraces, tactical bots, animated water a
 
 **AI-assisted development.** In-game bots use rule-based decisions and A* pathfinding. The game does not require an LLM or an AI service to run.
 
-## Play locally
-
-Requires Node.js 22.14+ and npm.
-
-```sh
-npm ci
-npm run build
-npm start
-```
-
-Open **http://localhost:4174/**. This serves the game and a shared SQLite leaderboard. Scores persist in ignored `data/rankings.sqlite`; other browsers using this server see the same scores. Appearance, coins and ordinary progression stay in the browser. Audio starts after interaction.
-
-For development, keep `npm start` running and use `npm run dev` in another terminal. Vite forwards `/api` to port 4174. `npm run dev:server` rebuilds/runs the backend. `npm run preview` previews only the static game.
-
-```sh
-npm test          # simulation, save/economy, replay and HTTP persistence checks
-npm run build    # strict frontend/backend TypeScript, Vite and local server bundle
-```
-
 ## Included
 
 - One, two or three connected floors, gold stairs and floor-specific blast propagation.
