@@ -1,0 +1,1 @@
+Environment meshes and textures extracted from the user-supplied KUBIKOS World Unity package by ANIMAL. These assets remain subject to their original license. Do not redistribute this project or its assets without the appropriate asset license. Original BOMBASTIC characters, UI, gameplay and procedural audio created for this project.

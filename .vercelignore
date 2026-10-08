@@ -1,0 +1,10 @@
+.reference/
+artifacts/
+data/
+node_modules/
+.git/
+server-dist/
+**/*.test.ts
+*.log
+.env*
+!.env.example
