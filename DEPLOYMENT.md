@@ -2,7 +2,7 @@
 
 ## Personal GitHub repository
 
-Use the `nexonomy` personal account as repository owner. Keep the repository private because included KUBIKOS assets retain their original licensing conditions. Source, runtime assets, locked dependencies, tests, CI and Vercel configuration are included. Local databases, generated builds, screenshots, authentication files, credentials and `.reference/` are excluded.
+The public repository is owned by the `Nexonomy` personal account. Source, runtime assets, locked dependencies, tests, CI and Vercel configuration are included. KUBIKOS assets retain their original license; see `public/assets/NOTICE.txt`. Local databases, generated builds, private artifacts, authentication files, credentials and `.reference/` are excluded. The curated game screenshot in `docs/visuals/` is included for the repository showcase.
 
 ## Vercel import
 

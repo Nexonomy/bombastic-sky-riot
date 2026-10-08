@@ -1,6 +1,16 @@
-# BOMBASTIC — Sky Riot
+![BOMBASTIC — Sky Riot](docs/visuals/banner.svg)
 
-A vibrant 3D browser arena game: three connected terrace floors, tactical bots, animated water, an active boss and bold Persona-inspired menus. React 19, TypeScript, Three.js, React Three Fiber, Zustand, Vite and procedural Web Audio.
+A 3D browser arena game with connected terraces, tactical bots, animated water and bold menus. Built with React, TypeScript and Three.js.
+
+[![Build and tests](https://github.com/Nexonomy/bombastic-sky-riot/actions/workflows/ci.yml/badge.svg)](https://github.com/Nexonomy/bombastic-sky-riot/actions/workflows/ci.yml) · [Controls](CONTROLS.md) · [Hosting guide](DEPLOYMENT.md) · [Creator's portfolio](https://ahsanhere.me)
+
+![Actual BOMBASTIC game menu showing a three-floor arena, water and stylized trees](docs/visuals/game-preview.jpg)
+
+| Arena | Combat | Rankings |
+| :--- | :--- | :--- |
+| 1–3 floors, stairs, rivers and bridges | Carry and throw bombs; face an active boss | Daily and all-time boards with server replay checks |
+
+**AI-assisted development.** In-game bots use rule-based decisions and A* pathfinding. The game does not require an LLM or an AI service to run.
 
 ## Play locally
 
@@ -61,7 +71,7 @@ This is an anonymous leaderboard: IDs live in browser storage. Replay verificati
 
 ## Assets and scope
 
-Characters, trees, water shaders, UI, gameplay and audio are original. Selected crates, rocks, barrels and stone meshes/textures come from the supplied KUBIKOS World package and retain their original license; see [NOTICE.txt](public/assets/NOTICE.txt). Keep the repository private unless appropriate redistribution rights are confirmed. The original package is untouched; extraction/source copies stay in ignored `.reference/`.
+Characters, trees, water shaders, UI, gameplay, audio and repository banners were created for this project. Selected crates, rocks, barrels and stone meshes/textures come from the supplied KUBIKOS World package and retain their original license; see [NOTICE.txt](public/assets/NOTICE.txt). Public source access does not grant a separate license to these third-party assets. The original package is untouched; extraction/source copies stay in ignored `.reference/`.
 
 Desktop keyboard gameplay is supported. Touch/gamepad, local/online multiplayer, team battle, moving gates/conveyors, breakable bridges, seasonal cosmetics and character unlock trees are not implemented. Floors are connected terraces at different elevations rather than overlapping indoor storeys. Low graphics/resolution scaling are available.
 
